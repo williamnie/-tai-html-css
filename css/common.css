@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear-fix::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+body{
+	font: 14px/1.5 Tahoma,'\5FAE\8F6F\96C5\9ED1','Microsoft Yahei',"hiragino sans gb", Helvetica, Arial, "\5b8b\4f53", 'sans-serif';
+    color: #333;
+    min-width: 1200px;
+}
+img{
+	vertical-align: top;
+}
+li{
+	list-style: none;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	/*color: #52e2c0;*/
+}
+i, em{
+	font-style: normal;
+}
+strong{
+	font-weight: normal;
+}
+.returntop{
+	position: fixed;
+	bottom: 50px;
+	right: 10px;
+	display: block;
+	width: 50px;
+	height: 66px;
+	background: url("../images/returntop.png");
+}

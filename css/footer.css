@@ -1,0 +1,30 @@
+footer{
+    text-align: center;
+    line-height: 22px;
+    color: #999;
+    padding-bottom: 80px;
+}
+footer a:hover{
+    color: #690 !important;
+}
+.footer-link{
+    padding: 35px 0 20px;
+}
+.footer-link i{
+    width: 2px;
+    height: 10px;
+    margin: 0 8px;
+    display: inline-block;
+    background: url("../images/ico_index.png") no-repeat -70px 0;
+}
+.footer-link a{
+    color: #666;
+}
+.footer-info a{
+    color: #999;
+}
+.footer-info a:last-child img{
+    /*position: relative;*/
+    /*top: -40px;*/
+    margin-top: -30px;
+}

@@ -1,0 +1,121 @@
+header{
+    background: #000;
+    border-bottom: 1px solid #9b9b9c;
+}
+.topbar{
+    background: #000;
+}
+.topbar-center{
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+    /*background: blueviolet;*/
+}
+.topbar-center .shop-logo{
+    display: block;
+    width: 57px;
+    height: 30px;
+    background: url("../images/shop/shop_logo.png");
+}
+.topbar ul{
+    margin-right: -80px;
+}
+.topbar ul li{
+    width: 135px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.topbar ul li img{
+    /*position: absolute;*/
+}
+.topbar ul li a{
+    line-height: 30px;
+    color: #9b9b9c;
+}
+
+
+
+/*=========================*/
+
+.search{
+    width: 1200px;
+    margin: 40px auto 0;
+    height: 129px;
+
+}
+.search .logo-v1{
+    margin: 28px 0 0 65px;
+    display: block;
+    width: 73px;
+    height: 77px;
+    background: url("../images/shop/shop-logo-v1.png");
+}
+.login{
+    padding-top: 60px;
+}
+.login a{
+    margin-left: 30px;
+    color: #9b9b9c;
+}
+
+
+
+/*=====================*/
+nav{
+    background: #000;
+}
+
+.nav-center{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 35px;
+}
+.nav-center a{
+    color: #ffffff;
+}
+.nav-center>a{
+    margin: 0 80px;
+    display: inline-block;
+}
+
+.nav-center ul, .nav-center ul li{
+    display: inline-block;
+    margin-left: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.under{
+    background: #ffffff;
+}
+.undercenter{
+    margin: 65px auto 25px;
+    width: 1200px;
+    height: 57px;
+    background: url("../images/shop/shop_footer_v520170223.png")
+}
+
+
+
+
+
+
+footer{
+    background: #000;
+}

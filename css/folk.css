@@ -1,0 +1,316 @@
+header .nav li:nth-child(7) a{
+    color: #cf9 !important;
+}
+
+article{
+    margin-top: 50px;
+}
+/*顶部背景样式*/
+.top-bg {
+    height: 912px;
+    background: url(../images/zh/ms/top.jpg) no-repeat center top #fff;
+}
+
+.top-word {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 427px;
+}
+
+.top-word h3 {
+    line-height: 36px;
+    color: #fbe9a6;
+    margin-bottom: 48px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.top-word h3 i {
+    padding: 0 15px;
+}
+
+.top-word p {
+    line-height: 28px;
+    font-size: 16px;
+    color: #fef7dd;
+    text-indent: 2em;
+}
+/*合作及出版信息*/
+.word1 {
+    width: 900px;
+    margin: 0 auto;
+
+}
+
+.word1-bg {
+    height: 276px;
+    background: url(../images/zh/ms/top2.png) no-repeat center top;
+}
+
+.word1-left {
+    width: 410px;
+}
+
+.word1-left h2,
+.word1-right h2 {
+    line-height: 64px;
+    color: #9e7f00;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.word1-left p {
+    color: #333;
+    line-height: 28px;
+    font-size: 16px;
+    text-indent: 2em;
+}
+
+.word1-right p {
+    color: #333;
+    line-height: 28px;
+    font-size: 16px;
+    text-indent: 0;
+}
+
+.word1-right {
+    width: 408px;
+}
+/*开始视频部分，可以循环使用*/
+/*每个视频块里都要包含的背景图片*/
+.video-top-bg{
+	height: 208px;
+    background: url(../images/zh/ms/bg_t.png) no-repeat center top ;
+}
+.video-bg{
+	background: url(../images/zh/ms/bg_c.png) repeat-y center top ;
+}
+.video-box{
+	margin: 0 auto;
+	width: 900px;
+}
+.video-top-left{
+	padding: 15px 0 8px 15px;
+    background-color: #fef0d6;
+    margin-bottom: 30px;
+    width: 336px;
+}
+.video-top-left h2{
+	    height: 56px;
+    margin-bottom: 14px;
+    font-weight: normal;
+}
+.video-top-left h2 i{
+	font-size: 40px;
+}
+.video-top-left h2 a{
+	    font-size: 14px;
+
+    margin-top: 32px;
+}
+.video-top-left p{
+	    font-size: 14px;
+    line-height: 28px;
+    text-indent: 2em;
+}
+.video-top-right{
+	    width: 514px;
+    height: 350px;
+        overflow: hidden;
+        padding: 15px 15px 8px 20px;
+        position: relative;
+        background-color: #fef0d6;
+
+    
+}
+.video-top-right a{
+	 width: 514px;
+	 height: 343px;
+	     position: relative;
+    display: block;
+    
+    overflow: hidden;
+
+
+}
+.video-top-right span{
+	width: 500px;
+	position: absolute;
+	top: 308px;
+	left: 20px;
+	    color: #ecdbbb;
+    line-height: 50px;
+    padding-left: 14px;
+    background: url(../images/zh/ms/tit_bg.png) left bottom repeat-x
+}
+.video-top-right a img{
+	width: 100%;
+	height: 100%;
+}
+.video-top-right-bf{
+	   
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 514px;
+    height: 343px;
+    z-index: -1;
+}
+.video-top-right-bf i{
+	    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 58px;
+    height: 58px;
+    margin-top: -29px;
+    margin-left: -29px;
+    background: url(../images/zh/ms/v_hover.png) no-repeat;
+    display: block;
+}
+.video-top-right:hover div{
+	z-index: 1;
+}
+.video-bottom{
+	clear: both;
+}
+.video-bottom-news1{
+	    background-color: #fef0d6;
+    padding: 4px;
+    height: 127px;
+    position: relative;
+}
+.video-bottom-news1 a{
+	    position: relative;
+    display: block;
+    width: 194px;
+    height: 127px;
+    overflow: hidden;
+}
+.video-bottom-news1 a img{
+	width: 100%;
+	height: 100%;
+}
+.video-bottom span{
+	line-height: 42px;
+    display: block;
+    height: 42px;
+    overflow: hidden;
+}
+.video-bottom-news1-bf{
+	   
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 194px;
+    height: 127px;
+    z-index: -1;
+}
+.video-bottom-news1-bf i{
+	    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 58px;
+    height: 58px;
+    margin-top: -29px;
+    margin-left: -29px;
+    background: url(../images/zh/ms/v_hover.png) no-repeat;
+    display: block;
+}
+.video-bottom-news1:hover div{
+	z-index: 1;
+}
+.video-bottom li{
+	width: 202px;
+	height: 177px;
+	margin-right: 30px;
+	float: left;
+
+}
+.video-bottom li:nth-child(4n){
+	margin-right: 0;
+
+}
+/*背景图片*/
+.bg{
+	background: url(../images/zh/ms/bgnn.jpg) repeat-y top center;
+}
+.video-top-bottom-bg{
+	
+	height: 208px;
+    background: url(../images/zh/ms/bg_b.png) no-repeat center top ;
+}
+.new_c_bg {
+    height: 344px;
+    background: url(../images/zh/ms/bg_c.png) center top repeat-y;
+}
+
+.child_tit{height:167px;
+    background: url(../images/zh/ms/child_tit.png) left top no-repeat;
+}
+.vedio_word {
+    width: 900px;
+    margin: 0 auto;
+}
+.vedio_word4 ul{
+    margin-top: -30px;
+}
+.vedio_word4{
+    padding-bottom: 30px;
+}
+.works_link{
+    position: relative;
+    display: block;
+     width: 194px;
+    height: 121px;
+    overflow: hidden;
+}
+.works_link .hover_works{
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.works_link:hover .hover_works{
+    display: block;
+}
+.works_link .work_img{
+    width: 194px;
+    height: 121px;
+}
+.works_link .pase_icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 58px;
+    height: 58px;
+    margin-top: -29px;
+    margin-left: -29px;
+    background: url(../images/zh/ms/v_hover.png) no-repeat;display: block;}
+.vedio_word ul li {
+    float: left;
+    width: 202px;
+    margin-right: 30px;
+}
+.vedio_word ul li .li_bg_box {
+    background-color: #fef0d6;
+    padding: 4px;
+    height: 127px;
+}
+.vedio_word ul li h4 {
+    line-height: 42px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+}
+.vedio_word ul li.no_margin {
+    margin-right: 0;
+}

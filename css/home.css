@@ -1,0 +1,549 @@
+body{
+    background: #f3f5f7;
+    font-size: 14px;
+}
+a:hover{
+    color: #52e2c0;
+}
+header .nav li:first-child a{
+    color: #cf9 !important;
+}
+footer{
+    background: #ffffff !important;
+    height: 150px;
+}
+/*article{*/
+    /*max-width: 1600px;*/
+    /*margin: 0 auto;*/
+    /*overflow: hidden;*/
+/*}*/
+
+.list-left img{
+    width: 470px;
+    height: 323px;
+}
+
+.banner{
+    position: relative;
+    max-width: 1600px;
+    min-width: 1020px;
+    height: 480px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1505px){
+    .home-wrapper{
+        width: 1470px;
+    }
+}
+@media screen and (min-width: 1255px) and (max-width: 1505px){
+    .home-wrapper{
+        width: 1220px;
+    }
+}
+@media screen and (max-width: 1255px){
+    .home-wrapper{
+        width: 970px;
+    }
+}
+.home-wrapper{
+    /*width: 970px;*/
+    /*box-sizing: border-box;*/
+    /*padding: 20px 65px 0;*/
+    margin: 0 auto 5px;
+    background: #ffffff;
+}
+.center-content{
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+
+.bottom-line{
+    border-bottom: 5px solid #f9f9f9;
+}
+.premiere-right{
+    height: 400px;
+    overflow: hidden;
+}
+.premiere-right>li{
+    height: 400px;
+}
+.recommend-like>ul{
+    height: 200px;
+    overflow: hidden;
+}
+.recommend-like>ul li{
+    height: 200px;
+}
+.choice>ul{
+    height: 290px;
+    overflow: hidden;
+}
+.choice>ul li{
+    height: 290px;
+}
+.v-diy-right{
+    height: 390px;
+    overflow: hidden;
+}
+.v-diy-right>li{
+    height: 390px;
+}
+
+
+/*==========轮播图部分==========*/
+/*TODO:设置了右侧列表的绝对定位，忘记给父元素添加相对定位，导致页面放大缩小时候列表位置随着body变化*/
+.banner{
+    position: relative;
+}
+
+/*----------轮播图背景图片部分----------*/
+/*图片父集ul为相对定位*/
+.banner-img{
+    position: relative;
+    /*width: 1600px;*/
+    /*height: 480px;*/
+}
+/*每张图片为绝对定位，重叠在一起*/
+.banner-img li{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: home_banner 40s infinite ;
+}
+.banner-img li:nth-child(1){
+
+}
+.banner-img li:nth-child(2){
+    animation-delay: 4s;
+}
+.banner-img li:nth-child(3){
+    animation-delay: 8s;
+}
+.banner-img li:nth-child(4){
+    animation-delay: 12s;
+}
+.banner-img li:nth-child(5){
+    animation-delay: 16s;
+}
+.banner-img li:nth-child(6){
+    animation-delay: 20s;
+}
+.banner-img li:nth-child(7){
+    animation-delay: 24s;
+}
+.banner-img li:nth-child(8) {
+    animation-delay: 28s;
+}
+.banner-img li:nth-child(9){
+    animation-delay: 32s;
+}
+.banner-img li:nth-child(10){
+    animation-delay: 36s;
+}
+
+@keyframes home_banner{
+    2%, 10%{
+        opacity: 1;
+    }
+    12%{
+        opacity: 0;
+    }
+}
+@keyframes home_banner1{
+    2%, 10%{
+        color: #52e2c0;
+    }
+    12%{
+        color: #ffffff;
+    }
+}
+
+/*----------右侧列表部分----------*/
+/*设置 背景图片 位置 大小*/
+.banner .banner-right{
+    position: absolute;
+    top: 38px;
+    right: 40px;
+    padding: 14px;
+    box-sizing: border-box;
+    width: 258px;
+    height: 404px;
+    background: url("../images/home/home_title_bg.png");
+
+}
+/*设置列表中行高 右对齐 文字颜色*/
+.banner-right li{
+    line-height: 38px;
+    text-align: right;
+}
+.banner-right a{
+    color: #ffffff;
+    animation: home_banner1 40s infinite ;
+}
+.banner-right .top li:nth-child(1) a{
+
+}
+.banner-right .top li:nth-child(2) a{
+    animation-delay: 4s;
+}
+.banner-right .top li:nth-child(3) a{
+    animation-delay: 8s;
+}
+.banner-right .top li:nth-child(4) a{
+    animation-delay: 12s;
+}
+.banner-right .top li:nth-child(5) a{
+    animation-delay: 16s;
+}
+.banner-right .top li:nth-child(6) a{
+    animation-delay: 20s;
+}
+.banner-right .top li:nth-child(7) a{
+    animation-delay: 24s;
+}
+.banner-right .top li:nth-child(8) a{
+    animation-delay: 28s;
+}
+.banner-right .top li:nth-child(9) a{
+    animation-delay: 32s;
+}
+.banner-right .top li:nth-child(10) a{
+    animation-delay: 36s;
+}
+/*下方列表距离上方列表有一定的距离*/
+.banner-right .bottom{
+    margin-top: 40px;
+}
+
+
+
+
+
+
+/*==========提供下载图片部分==========*/
+/*设置与轮播图之间的间距*/
+.download{
+    padding-top: 10px;
+    text-align: center;
+    background: #ffffff;
+    /*padding-bottom: 20px;*/
+}
+
+
+
+/*=========================节目列表公共内容=========================*/
+/*每一大部分 标题部分左侧的样式一致 右侧基本为同类型*/
+/*每一个小元素内容中  图片的宽度一致*/
+/*不论大小元素中  节目标题  歌手姓名或者介绍  部分的样式基本一致*/
+
+/*----------------设置标题部分的样式---------------*/
+/*设置标题盒子的 内边距 下边框*/
+.title-box{
+    padding: 34px 0 16px;
+    border-bottom: 2px solid #f4f4f4;
+    margin-bottom: 20px;
+}
+/*设置标题名称的 加粗 字体大小*/
+.title-box h3{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+}
+/*设置标题右侧列表的样式*/
+.title-box ul li{
+    float: left;
+    padding: 0 19px;
+    border-right: 1px dotted #cccccc;
+    line-height: 14px;
+}
+.title-box ul li:last-child{
+    padding-right: 0;
+    border-right: none;
+}
+/*设置标题右侧 换一换 样式*/
+.title-box .change a{
+    color: #a4a4a4;
+    width: 65px;
+    line-height: 20px;
+    background: url("../images/change.png") no-repeat 0 1px;
+    padding-left: 20px;
+}
+.title-box .change:hover a{
+    background: url("../images/change_hover.png") no-repeat -3px;
+}
+/*设置标题右侧 查看更多 样式*/
+.title-box .more a{
+    color: #a4a4a4;
+}
+/*设置 音悦V榜 标题旁列表样式*/
+.vlist .title-box a{
+    font-size: 14px;
+    line-height: 14px;
+    color: #666;
+    padding: 0 19px;
+    border-left: 1px solid #e5e5e5;
+}
+.vlist .title-box a:hover{
+    color: #52e2c0;
+}
+.vlist .title-box a:first-of-type{
+    margin-left: 20px;
+}
+
+/*----------设置 节目名字 介绍 歌手姓名 的样式----------*/
+h5{
+    font-size: 14px;
+    line-height: 16px;
+    height: 16px;
+    padding: 12px;
+    font-weight: normal;
+    overflow: hidden;
+}
+.singer{
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+
+    color: #a4a4a4;
+    padding-left: 12px;
+}
+
+/*----------设置左侧图片轮播部分 大小 位置----------*/
+.list-left{
+    margin-bottom: 20px;
+}
+.list-left a{
+    display: block;
+    width: 470px;
+}
+
+/*----------设置单个节目 大小 位置----------*/
+.single{
+    margin: 0 0 20px 30px;
+}
+.single a{
+    display: block;
+    width: 220px;
+}
+
+a:hover p{
+    color: #52E2C0;
+}
+/*热播推荐 猜你喜欢 清除第一个元素的左边距*/
+/*清除精品悦单 sub中每个元素的左边距*/
+.recommend-like .single:first-child, .choice .single:first-child{
+    margin-left: 0;
+}
+
+
+/*.premiere, .amuse{*/
+    /*height: 505px;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.recommend-like{*/
+    /*height: 308px;*/
+    /*overflow: hidden;*/
+/*}*/
+/*==========首播左侧轮播部分==========*/
+.premiere-right .left-show{
+    width: 470px;
+    height: 400px;
+    overflow: hidden;
+}
+.left-show .left-content{
+    width: 1410px;
+    animation: premiere-left 20s;
+}
+@keyframes premiere-left{
+    0%, 45%{
+        transform: translateX(0)
+    }
+    50%, 95%{
+        transform: translateX(-470px);
+    }
+    100%{
+        transform: translateX(-940px);
+    }
+}
+
+
+/*==========音悦V榜&自制节目部分==========*/
+.v-diy-right{
+    /*padding-top: 20px;*/
+}
+.v-diy-right img{
+    width: 220px;
+    height: 120px;
+}
+.v-diy-right  h4{
+    font-weight: bold;
+    line-height: 16px;
+}
+.v-diy-right  p{
+    color: #a4a4a4;
+    margin-bottom: 15px;
+}
+.v-diy-right h5{
+    font-size: 14px;
+    height: 50px;
+}
+/*右侧四个大列表的 大小 位置*/
+.v-diy-right>li{
+    float: left;
+    width: 220px;
+    margin-left: 30px;
+}
+/*大列表中的子列表的 间距 底边框*/
+.v-diy-right .sub li{
+    /*padding-bottom: 10px;*/
+    border-bottom: 1px solid #e4e4e4;
+}
+.v-diy-right .sub li:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+
+
+/*==========精品悦单部分==========*/
+.choice h5{
+    padding: 9px 12px;
+    font-size: 14px;
+}
+.choice .info{
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 12px;
+    color: #a4a4a4;
+}
+/*设置盒子为相对定位*/
+.choice .box{
+    position: relative;
+    height: 290px;
+    margin-left: 30px;
+}
+.choice .box:first-child{
+    margin-left: 0;
+}
+/*设置li-hover为绝对定位 和不hover时候重叠 默认情况下不显示*/
+.li-hover{
+    display: none;
+    width: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/*hover时候 显示li-hover部分*/
+.box:hover .li-hover{
+    display: block;
+}
+.box:hover .li-hover a .intro p{
+    color: #333 ;
+}
+.box:hover .intro span{
+    display: block;
+    font-size: 12px;
+    color: #a4a4a4 ;
+    padding-left: 45px;
+}
+/*设置最后一个元素的显示位置*/
+.box:last-child:hover .li-hover{
+    left: -250px;
+}
+/*hover时候 图片的大小*/
+.box .li-hover a img{
+    width: 270px;
+}
+/*hover时候 图片右边的介绍部分*/
+.li-hover a .intro{
+    width: 200px;
+    height: 270px;
+    box-sizing: border-box;
+    background: #e5e5e5;
+    padding: 0 22px;
+}
+
+.li-hover a .intro .int-title {
+    font-weight: bold;
+    padding: 10px 0;
+}
+.li-hover a .intro .intro-top{
+    height: 130px;
+    overflow: hidden;
+}
+.li-hover a .intro .des{
+    padding-left: 0;
+    /*display: block;*/
+    /*font-size: 12px;*/
+    line-height: 23px;
+    /*color: #a4a4a4 !important;*/
+    /*height: 110px;*/
+    /*overflow: hidden;*/
+}
+.li-hover a .intro .author{
+    line-height: 40px;
+    /*margin-top: -20px;*/
+}
+.author img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.li-hover a .intro .author i{
+    margin-right: 5px;
+    position: relative;
+    top: 16px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.choice>ul .box:nth-child(1) .author i{
+    background: url("../images/home/home_icon1.jpg");
+}
+.choice>ul .box:nth-child(2) .author i{
+    background: url("../images/home/home_icon2.jpg");
+}
+.choice>ul .box:nth-child(3) .author i{
+    background: url("../images/home/home_icon3.jpg");
+}
+.choice>ul .box:nth-child(4) .author i{
+    background: url("../images/home/home_icon4.jpg");
+}
+.choice>ul .box:nth-child(5) .author i{
+    background: url("../images/home/home_icon5.jpeg");
+}
+.choice>ul .box:nth-child(6) .author i{
+    background: url("../images/home/home_icon6.png");
+}
+
+
+.li-hover a .intro em{
+    width: 13px;
+    height: 14px;
+    display: inline-block;
+    background: url("../images/home/home_s_playcount.png");
+}
+/*hover时候 图片上方的播放按钮*/
+.li-hover .bg-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 270px;
+    background: url("../images/home/home_play_icon.png");
+    z-index: 2;
+}
+
+.underbanner{
+    /*margin: -100% auto;*/
+    display: block;
+    margin-bottom: 50px;
+    height: 80px;
+    background: url("../images/home/home_underbanner.jpg");
+}

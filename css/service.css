@@ -1,0 +1,237 @@
+.bg-box {
+    width: 100%;
+    background: none repeat scroll 0 0 #f5f6f7;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 982px;
+}
+
+.content {
+    margin: 10px 0 0;
+}
+
+.main-top {
+    background: url(../images/zh/main_top.gif) no-repeat scroll 0 0;
+    height: 7px;
+    overflow: hidden;
+    display: block;
+}
+
+.main-middle {
+    background: url(../images/zh/main_center.gif) repeat-y scroll 0 50%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.cf-title {
+    position: relative;
+    height: 71px;
+    margin-bottom: 25px;
+    border-bottom: 5px solid #d9d9d9;
+}
+
+.cf-title h2 {
+    float: left;
+    margin: 14px 0 0 19px;
+    width: 204px;
+    height: 34px;
+    background: url(../images/zh/sep1.png) no-repeat scroll 0 0;
+    text-indent: -999em;
+}
+
+.cf-title i {
+    float: right;
+    margin: 5px 8px 0 0;
+    height: 42px;
+    display: block;
+    width: 126px;
+    overflow: hidden;
+    background-image: url(../images/zh/wpa_a06.png);
+}
+
+.cf-title i a {
+    position: absolute;
+    display: block;
+    width: 89px;
+    height: 39px;
+    line-height: 38px;
+    padding: 3px 0 0 37px;
+    text-align: center;
+    color: #325f7f;
+    zoom: 1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.menu {
+    position: absolute;
+    left: 370px;
+    top: 47px;
+    width: 252px;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+    width: 64px;
+    height: 24px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.menu li a {
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: 'simsun';
+}
+
+.menu li:nth-child(2) {
+    border-bottom: 5px solid #80a823;
+}
+
+.cf-content {
+    width: 940px;
+    margin: 0 auto;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.cf-content-sidebar {
+    float: left;
+    width: 161px;
+    background-color: #eee;
+}
+
+.cf-content-sidebar li {
+    width: 161px;
+    height: 36px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cf-content-sidebar li:nth-child(1) {
+    height: 76px;
+}
+
+.icon {
+    position: absolute;
+    right: 14px;
+    width: 10px;
+    background: url(../images/zh/sep3.png) no-repeat scroll 0 0;
+    overflow: hidden;
+    height: 4px;
+    /*background-position: 0 0;*/
+    top: 16px;
+}
+
+.cf-content-sidebar li a {
+    display: block;
+    width: 161px;
+    height: 36px;
+    color: #666;
+    font: bold 12px/36px simsun;
+    background: url(../images/zh/sep.png) no-repeat scroll 0 bottom;
+}
+
+.sub {
+    position: absolute;
+    padding-bottom: 2px;
+    top: 36px;
+    left: 0;
+    width: 161px;
+    background: url(../images/zh/sep.png) no-repeat scroll 0 bottom;
+}
+
+.sub a {
+    background-image: none !important;
+    background-color: #f8f8f8 !important;
+    color: #666 !important;
+}
+
+.icon1 {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 10px;
+    height: 10px;
+    background: url(../images/zh/sep3.png) no-repeat scroll 0 -4px;
+    overflow: hidden;
+}
+
+.cf-content-right {
+    width: 779px;
+    background-color: #f8f8f8;
+}
+
+.jieshao {
+    padding-bottom: 72px;
+    background: url(../images/zh/textbg.jpg) no-repeat scroll 0 bottom;
+}
+
+.jieshao p {
+    width: 754px;
+    padding-left: 24px;
+    text-indent: 26px;
+    line-height: 38px;
+}
+
+.jieshao p strong {
+    font-weight: bold;
+}
+
+.cf-content-right h2,
+.hot-problem h2 {
+    margin: 9px 0 8px 29px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'simsun';
+    color: #690;
+    background: url(../images/zh/sep2.png) no-repeat scroll left 2px;
+}
+
+.hot-problem ol {
+    margin: 0 0 31px 60px;
+}
+
+.hot-problem ol li {
+    list-style: decimal;
+    line-height: 30px;
+}
+
+.hot-problem ol li a:hover {
+    color: #390;
+    text-decoration: underline;
+}
+
+.cf-bottom {
+    width: 317px;
+    height: 70px;
+    margin: 33px 14px 13px 0;
+    background: url(../images/zh/sep1.png) no-repeat scroll 0 -216px;
+}
+
+.cf-content-sidebar li:hover a {
+    color: #690;
+    text-decoration: none;
+    background: url(../images/zh/hover.png) repeat-x scroll 0 0;
+}
+
+.cf-content-sidebar li:nth-child(2) a {
+    color: #690;
+    text-decoration: none;
+    background: url(../images/zh/hover.png) repeat-x scroll 0 0;
+}

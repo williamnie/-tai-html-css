@@ -1,0 +1,65 @@
+footer{
+	padding-top: 50px;
+}
+
+/*设置整个内容页面的大小*/
+
+.wrapper{
+	width: 960px;
+	margin: 50px auto 0;
+}
+
+h2{
+	font-family: microsoft yahei,tahama;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 82px;
+    padding-left: 13px;
+}
+
+
+
+/*设置主体内容左边部分的宽度*/
+.body-left{
+	width: 615px;
+	font-family: tahoma,simsun,'microsoft yahei',Helvetica,Arial,'sans-serif';
+}
+
+.body-left-div{
+	margin-top: 10px;
+}
+
+.body-left h3{
+	border-bottom: 1px solid #d4e4c2;
+    font-size: 12px;
+    padding: 7px 15px;
+    color: #333;
+}
+
+.body-left p{
+	text-indent: 28px;
+	line-height: 22px;
+}
+
+/*内容左边设置完毕*/
+
+/*设置内容右边内容*/
+.body-right{
+	padding-right: 220px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: tahoma,simsun,'microsoft yahei',Helvetica,Arial,'sans-serif';
+    
+}
+
+.body a{
+	color: #006699;
+}
+
+.body a:hover{
+	color:#a1ce43;
+	text-decoration: underline;
+
+}
+
+/*内容样式结束*/

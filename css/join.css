@@ -1,0 +1,114 @@
+/*=========入场券背景图部分===============*/
+.banner{  /*这是一张通往梦想的入场券背景图*/
+	margin-top: 50px;
+	height: 600px;
+	width: 100%;
+	background: url(../images/ht/join.jpg) no-repeat top center;
+	overflow: hidden;
+
+}
+/*=========中间正文内容================*/
+#content{
+	width: 100%;
+    /*不要设高*/
+	background:#f1f1f1;
+	padding-bottom: 50px;
+}
+/*招聘首页子导航部分*/
+.subnav{
+	height: 72px;
+	background-color: #efefef;
+	
+} 
+/*中间div包裹*/
+.subnav_mid{
+	width: 1000px;
+	height: 72px;
+	margin: 0 auto;
+}
+/*子导航使用无序列表*/
+.subnav_mid ul li{
+	background: url(../images/ht/join_02.png) no-repeat right center;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 72px;	
+}
+.subnav_mid ul li:last-child{
+	background: none;
+}
+/*改变超链接的颜色*/
+.subnav_mid ul li a{
+	font-size: 15px;
+	color: black;
+	text-align: center;
+}
+/*鼠标悬浮的时候*/
+.subnav_mid ul li a:hover{
+	color: #390;
+
+}
+/*======音悦台-让娱乐更美好部分=====*/
+
+/*文字提示信息div包裹*/
+.msg{
+	width: 834px;
+	/*不要设高*/
+	margin: 0 auto; /*不要写左右margin，margin：0 auto；放大缩小自适应*/
+    background: url(../images/ht/bg_joinus.png) no-repeat left top;
+}
+/*音悦台-让娱乐更美好,标题标签*/
+.msg h2{
+	color: #669900;
+	font-weight: normal;
+}
+.msg h2,h4{
+	margin-left: 55px;
+}
+.msg h4{
+	margin-top: 20px;
+}
+.msg p{
+	text-indent: 2em;
+	padding-top: 34px;
+	line-height: 28px;
+	padding-left: 56px;
+	font-size: 15px;
+	color: #666666;
+}
+/*应聘要求*/
+.ask{
+	width: 755px;
+	height: 34px;
+    margin-left: 56px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #ACACAC;
+	line-height: 34px;
+	font-size: 12px;
+	padding-left: 20px;
+	font-weight: bold;
+	color: #390;
+	margin-top: 36px;
+}
+/*应聘要求文字介绍*/
+.msg ol li{
+	font-size: 14px;
+	color: #666;
+	padding-top: 15px;
+	margin-left: 50px;
+}
+/*加粗部分*/
+.msg ol li span{
+	font-weight: bold;
+
+}
+
+.bg3{
+	margin-top: 86px;
+	margin-left: 56px;
+}
+.bg4{
+	margin-top: 96px;
+	margin-left: 56px;
+}

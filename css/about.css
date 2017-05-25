@@ -1,0 +1,58 @@
+.content{
+	width: 762px;
+	/*大体的内容不要设高度*/
+	margin: 50px auto;
+	position: relative;
+}
+.title{
+	width: 613px;
+	height: 122px;
+	border-bottom: 1px solid #ccc;
+}
+.title h3,h5{
+	padding-left: 16px;
+}
+.title h3{
+	padding-top: 26px;
+
+}
+.title h5{
+	padding-top: 40px;
+}
+.note{
+	width: 613px;
+	
+	margin-top: 40px;
+}
+.note h3{
+	padding-left: 30px;
+	padding-bottom: 60px;
+	font-weight: normal;
+
+}
+.note p{
+	text-indent: 2em;
+	font-size: 14px;
+	line-height: 22px;
+	font-family: "宋体";
+	padding-bottom: 20px;
+
+}
+.about_yyt{
+	width: 92px;
+	height: 114px;
+	position: absolute;
+	top: 128px;
+	right: 0;
+
+}
+.about_yyt a{
+	font-size: 15px;
+	display: block;
+	padding-bottom: 5px;
+	color: #006699;
+}
+.about_yyt a:hover{
+	color: #390;
+	text-decoration: underline;
+}

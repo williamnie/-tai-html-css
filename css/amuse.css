@@ -1,0 +1,725 @@
+article{
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+header .nav li:nth-child(4) a{
+    color: #cf9 !important;
+}
+header .search input[type=text]{
+
+}
+a:hover{
+    color: #ff7c7c !important;
+}
+
+.amuse_wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*==========公共样式部分==========*/
+/*----------背景图片标题----------*/
+h2{
+    margin: 30px 0 20px;
+    height: 38px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9e9e9;
+}
+/*h2 h3 右边更多部分*/
+h2 a, h3 a{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #999999;
+}
+.headlines h2{
+    background: url("../images/amuse/amuse_toutiao.png") no-repeat;
+}
+.today-video h2{
+    background: url("../images/amuse/amuse_bao.png") no-repeat;
+}
+.column h2{
+    background: url("../images/amuse/amuse_exclusive.jpg") no-repeat;
+    margin-left: -3px;
+}
+.gossip h2{
+    background: url("../images/amuse/amuse_bagua.png") no-repeat;
+    margin-bottom: 0;
+}
+.partner h2{
+    background: url("../images/amuse/amuse_friend.png") no-repeat;
+}
+
+/*----------hover图片放大 并隐藏放大部分----------*/
+.scale-change{
+    overflow: hidden;
+}
+.scale-change img{
+    transition: all 500ms;
+}
+.scale-change:hover img{
+    transform: scale(1.1);
+}
+
+
+/*==========台哥娱乐logo部分==========*/
+/*设置顶部logo区域的border-bottom*/
+.topbar{
+    border-bottom: 1px solid #e9e9e9;
+}
+/*设置顶部中间内容区域的 范围*/
+.topcenter{
+    width: 1190px;
+    margin: 0 auto;
+}
+/*设置顶部图片的位置*/
+.topcenter img{
+    margin: 27px 0;
+}
+/*设置右浮的列表中 li大小 行内块级*/
+.topcenter li{
+    font-size: 18px;
+    margin-left: 50px;
+    line-height: 90px;
+    display: inline-block;
+}
+/*设置列表中第一个li中的a的 颜色*/
+.topcenter ul li:first-child a{
+    color: #ff7c7c;
+}
+
+
+/*===========新闻列表部分==========*/
+/*整体内容距离顶部的距离*/
+.newlist{
+    padding-top: 20px;
+}
+
+/*==========新闻列表左侧部分==========*/
+.newlist .newlist-left{
+    display: inline-block;
+    width: 840px;
+}
+/*----------轮播广告部分----------*/
+.banner{
+    height: 430px;
+    position: relative;
+}
+/*TODO: 给div加绝对定位 控制显隐  加在下面的a上hover文字会出问题*/
+/*TODO: 隐藏只是看不见了  并不能移动层叠位置  最后一个总在最上面*/
+.bannerbox{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: 0;
+    animation: amusebanner 50s infinite;
+}
+.bannerbox>a{
+    display: block;
+    color: white;
+    font-size: 18px;
+}
+.banner .bannerbg{
+    position: absolute;
+    bottom: 0;
+    width: 840px;
+    height: 200px;
+    box-sizing: border-box;
+    background: url("../images/amuse/amuse_cover2.png");
+    padding: 160px 0 0 20px;
+}
+.bannerbg a{
+    font-size: 18px;
+    color: #ffffff;
+}
+.bannerbg span{
+    color: #ffffff;
+}
+.bannerbox a .bannerbg span:hover{
+    color: #ff7c7c;
+}
+
+
+
+@keyframes amusebanner {
+    2%, 20%{
+        z-index: 1;
+        opacity: 1;
+    }
+    22%{
+        z-index: 0;
+        opacity: 0;
+    }
+}
+.bannerbox:nth-child(2){
+    animation-delay: 10s;
+}
+.bannerbox:nth-child(3){
+    animation-delay: 20s;
+}
+.bannerbox:nth-child(4){
+    animation-delay: 30s;
+}
+.bannerbox:nth-child(5){
+    animation-delay: 40s;
+}
+
+.banner .leftbtn, .banner .rightbtn{
+    opacity: 0;
+    transition: all 500ms;
+}
+.banner:hover .leftbtn, .banner:hover .rightbtn{
+    opacity: 1;
+}
+.banner .leftbtn:hover{
+    background: url("../images/btn_icon.png") -2px -2px;
+}
+.banner .rightbtn:hover{
+    background: url("../images/btn_icon.png") -260px -2px;
+}
+.banner .leftbtn{
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    top: 165px;
+    width: 40px;
+    height: 100px;
+    display: block;
+    background: url("../images/btn_icon.png") -57px -2px;
+}
+.banner .rightbtn{
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    top: 165px;
+    width: 40px;
+    height: 100px;
+    display: block;
+    background: url("../images/btn_icon.png") -203px -2px;
+}
+
+
+/*----------娱悦头条部分----------*/
+/*设置左上角图片底部渐变背景的位置*/
+/*margin固定到位*/
+/*TODO: 没有相对定位背景渐变图片不显示？？？*/
+.bg-cover3{
+    position: relative;
+    margin-top: -118px;
+    padding:  0 10px;
+    height: 118px;
+    background: url("../images/amuse/amuse_cover3.png") no-repeat -2px 0;
+}
+/*设置渐变背景中文字的样式*/
+.bg-cover3 h5{
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 26px;
+    padding: 60px 0 3px 0;
+}
+.bg-cover3 span{
+    color: #cccccc;
+}
+
+/*图片左浮动 右侧文字距离图片有一定距离*/
+.headlines .right{
+    padding-left: 338px;
+}
+/*设置列表中每行新闻的样式*/
+.right li{
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: 12px;
+}
+.right li a{
+    display: block;
+    font-size: 20px;
+    line-height: 50px;
+    color: #111;
+}
+.right li span{
+    font-size: 14px;
+    color: #8b8b8b;
+}
+
+/*----------头条下方图片---------*/
+/*图片距离上下的距离*/
+.newlist-left>img{
+    margin: 30px 0 20px;
+}
+
+/*----------华语列表部分----------*/
+/*上方导航的样式*/
+.mandarin .top{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #616161;
+}
+.mandarin .top li{
+    float: left;
+    font-size: 20px;
+    padding: 0 20px;
+}
+.mandarin .top li:first-child{
+    padding-left: 0;
+    border-right: 2px solid #e9e9e9;
+}
+.mandarin .top li a{
+    padding-bottom: 10px;
+}
+.mandarin .top li:first-child a{
+    color: #ff7c7c;
+    border-bottom: 2px solid #ff7c7c;
+}
+.mandarin .top li:hover a{
+    border-bottom: 2px solid #ff7c7c;
+}
+
+/*下方新闻列表的样式*/
+.mandarin .news li{
+    display: inline-block;
+    width: 400px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e9e9e9;
+}
+/*后两个元素没有底边框*/
+.mandarin .news li:nth-last-child(2), .mandarin .news li:last-child{
+    border-bottom: none;
+}
+/*设置偶数元素的左边距*/
+.mandarin .news li:nth-child(even){
+    margin-left: 35px;
+}
+/*每个元素的样式*/
+.mandarin .news a{
+    display: block;
+    font-size: 20px;
+    line-height: 50px;
+}
+.mandarin .news p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #8b8b8b;
+    height: 42px;
+    overflow: hidden;
+}
+
+
+/*==========新闻列表右侧部分==========*/
+/*----------上方列表部分----------*/
+/*设置列表部分的背景颜色*/
+.newlist-right .toplist li{
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 10px;
+    background: #f9f9f9;
+}
+/*设置列表第一个链接的颜色*/
+.newlist-right .toplist li:first-child{
+    background: #ddd;
+}
+/*点击图片时下方列表中第一个链接变色*/
+.toplist>a:hover ~ ul li:first-child a{
+    color: #ff7c7c;
+}
+/*----------台哥报报部分----------*/
+/*图片下方文字的 颜色 大小 位置*/
+.today-video>a p{
+    margin-top: 8px;/*跟随图片播放按钮的位置移动向上移动了8px 需要移下来*/
+    font-size: 14px;
+    line-height: 40px;
+    background: #dddddd;
+    padding: 0 10px;
+}
+/*图片上播放按钮的 大小 位置*/
+/*用margin固定到位*/
+.today-video>a .bo{
+    position: relative;
+    margin: -60px 0 0 8px;
+    width: 52px;
+    height: 52px;
+    display: block;
+    background: url("../images/bo.png");
+}
+
+/*----------台哥专栏部分----------*/
+/*图片下方渐变阴影*/
+/*margin固定到位*/
+.column>a .bg{
+    position: relative;
+    margin-top: -101px;
+    width: 330px;
+    height: 101px;
+    background: url("../images/amuse/amuse_cover5.png");
+}
+/*文字下移用padding 否则会连渐变背景一起顶下来*/
+.column>a .bg p{
+    padding: 49px 0 3px 10px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #ffffff;
+}
+/*设置台哥报报&台哥专栏 两个元素的距离*/
+.today-video>a, .column>a{
+    display: block;
+}
+.today-video>a:first-of-type, .column>a:first-of-type{
+    margin-bottom: 30px;
+}
+
+/*----------你好八卦部分----------*/
+/*设置每个链接的样式*/
+.gossip li{
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+/*设置列表前方序号*/
+.gossip li em{
+    display: inline-block;
+    width: 18px;
+    font-size: 14px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*----------明星圈&影视圈 公共标题部分----------*/
+h3{
+    font-size: 20px;
+    margin: 30px 0 20px;
+    color: #000000;
+}
+
+/*----------明星圈&影视圈顶部背景图片部分----------*/
+/*底部宽度100%背景图*/
+.celebrities .title, .film .title{
+    margin-top: 50px;
+    width: 1200px;
+    height: 88px;
+    background: url("../images/amuse/amuse_cover.png");
+}
+/*明星圈logo背景图片*/
+.celebrities .title .titlelogo{
+    position: relative;
+    top: 15px;
+    margin: 0 auto 0;
+    width: 144px;
+    height: 44px;
+    background: url("../images/amuse/amuse_star.png");
+}
+/*电影圈logo背景图片*/
+.film .title .titlelogo{
+    position: relative;
+    top: 15px;
+    margin: 0 auto 0;
+    width: 144px;
+    height: 44px;
+    background: url("../images/amuse/amuse_film.png");
+}
+
+/*==========星主角一行==========*/
+/*星主角 最新 星访谈 三行并列布局*/
+/*每块设为inline-block 固定宽 间距  顶部对齐*/
+.star, .latest, .interview{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*----------星主角----------*/
+/*样式同headline左上方图片*/
+
+/*----------星访谈部分----------*/
+/*定宽*/
+.interview li{
+    width: 330px;
+    padding-left: 10px;
+}
+/*列表前方小方块*/
+.interview li i{
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    margin-bottom: 2px;
+    background: #000;
+    margin-right: 10px;
+}
+/*列表中文字样式*/
+.interview li .chatlink{
+    font-size: 14px;
+    line-height: 33px;
+    color: #000000;
+}
+/*TODO: hover第一张图片的时候 上方一行文字应变色； hover文字的时候 前方em中的小方块会变色； hover列表中每行链接时应切换当当前行的图片*/
+/*TODO: 在后面选不到*/
+.interview li .chatlink:hover ~ i{
+    background: #ff7c7c;
+}
+.interview li .chatpic:hover ~ .chatlink{
+    color: #ff7c7c ;
+}
+
+/*----------最新----------*/
+/*娱乐圈中最新列表 定宽*/
+.celebrities .latest{
+    width: 480px;
+    margin: 0 28px;
+}
+/*每行的位置 底边框*/
+.latest li{
+    padding-top: 14px;
+    border-top: 1px solid #e9e9e9;
+}
+/*第一行元素没有上方内边距*/
+.latest li:first-child{
+    border-top: none;
+    padding-top: 0;
+}
+/*隐藏图片移除部分*/
+.latest li>a{
+    height: 90px;
+    width: 160px;
+    overflow: hidden;
+}
+/*每行图片右方介绍信息的样式*/
+.latest li .latestinfo{
+    padding: 5px 0 32px 170px;
+}
+.latest li .latestinfo h4{
+    font-size: 18px;
+    line-height: 48px;
+}
+.latest li .latestinfo span{
+    color: #999999;
+    margin-right: 15px;
+}
+.latest li .latestinfo a{
+    color: #999999;
+}
+.latest li .latestinfo h4 a{
+    color: #333;
+}
+
+/*----------台哥高清----------*/
+/*TODO:鼠标移出时应切换到另一张图片*/
+/*四列排列 每列设为inline-block 顶部对齐*/
+/*设置每列的间距*/
+.pic .row{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+/*最后一列没有右方外边距*/
+.pic .row:last-child{
+    margin-right: 0;
+}
+/*梅列第一个元素距离第二个元素的距离*/
+.pic .col:first-child{
+    margin-bottom: 15px;
+}
+/*隐藏默认时 底部文字渐变背景部分*/
+.row a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/*hover时出现的底部渐变背景部分*/
+/*margin固定到位 从底部缓慢出现*/
+.piccover{
+    position: absolute;
+    bottom: -101px;
+    width: 100%;
+    height: 101px;
+    background: url("../images/amuse/amuse_cover5.png") repeat-x;
+    transition: all 500ms;
+}
+/*底部渐变背景中文字部分 用padding顶下来*/
+.piccover span{
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 70px;
+}
+/*hover时底部渐变背景移动的距离*/
+.row .col:hover .piccover{
+    bottom: 0;
+}
+
+
+
+/*==========影视圈部分=========*/
+/*左中右三列  左右定宽 中间自适应*/
+.film .latest{
+    padding: 0 390px 0 346px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.filmleft{
+    width: 318px;
+    margin-left: -100%;
+}
+.filmright{
+    width: 330px;
+    margin-left: -330px;
+}
+
+/*----------左侧看点部分----------*/
+/*图片下方介绍部分*/
+.point span{
+    display: block;
+    font-size: 16px;
+    line-height: 50px;
+    padding: 0 10px;
+    background: #eeeeee;
+}
+
+/*----------左侧扒剧部分----------*/
+/*第一个元素和第二个元素中间的距离*/
+.tv li:first-child{
+    margin-bottom: 20px;
+}
+/*底部渐变背景的样式*/
+/*margin固定到位*/
+/*TODO:相对定位：hover图片放大时不消失？？？*/
+.tv .tvcover{
+    position: relative;
+    margin-top: -101px;
+    width: 318px;
+    height: 101px;
+    background: url("../images/amuse/amuse_cover5.png");
+}
+/*渐变背景中文字的样式*/
+.tv .tvcover span{
+    display: block;
+    font-size: 16px;
+    padding: 70px 0 0 10px;
+    color: #ffffff;
+}
+
+/*----------中间最新部分----------*/
+/*样式同娱乐圈中最新部分*/
+
+/*----------右侧热映电影部分----------*/
+/*TODO:点击按钮应该能切换不同的电影介绍*/
+/*显示的单张电影介绍范围大小*/
+.filmshow{
+    width: 330px;
+    overflow: hidden;
+}
+/*所有电影介绍左浮动并排显示后的总长*/
+.films{
+    width: 1000px;
+}
+/*每个电影介绍的样式*/
+.films>li{
+    float: left;
+    width: 330px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+}
+/*图片左浮动 设置右方的电影介绍文字与图片有一定距离*/
+.film li .filminfo{
+    padding-left: 120px;
+}
+/*右侧介绍文字部分样式*/
+.filminfo{
+    line-height: 23px;
+}
+.filminfo h6{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.filminfo p{
+    font-size: 14px;
+}
+.filminfo p:first-of-type{
+    margin-bottom: 14px;
+}
+.filminfo p span{
+    color: #999999;
+}
+.filminfo .name li{
+    float: left;
+}
+/*电影持续时间部分文字样式*/
+.filmtime{
+    margin: 6px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+/*电影内容介绍部分*/
+.filmabout{
+    margin-bottom: 50px;
+    height: 40px;
+    overflow: hidden;
+    color: #999999;
+}
+/*设置下方切换按钮的位置 背景图片*/
+.hotfilms{
+    position: relative;
+}
+.hotfilms .leftbtn{
+    position: absolute;
+    bottom: 22px;
+    left: 130px;
+    width: 9px;
+    height: 15px;
+    display: block;
+    background: url("../images/turn.png");
+}
+.hotfilms .rightbtn{
+    position: absolute;
+    bottom: 22px;
+    right: 130px;
+    width: 9px;
+    height: 15px;
+    display: block;
+    background: url("../images/smallbtn.png") no-repeat -62px -1px;
+}
+/*右边按钮hover时更换背景图片*/
+.hotfilms .rightbtn:hover{
+    background: url("../images/turn.png") -13px -20px;
+}
+
+
+
+/*===========合作伙伴部分===========*/
+.partner .companybox{
+    width: 1200px;
+    height: 180px;
+    /*background: pink;*/
+    position: relative;
+}
+.partner .companybox>li{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: amuse-link 8s infinite;
+}
+@keyframes amuse-link {
+    5%, 50%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 0;
+    }
+}
+.partner .companybox li:nth-child(2){
+    animation-delay: 4s;
+}
+
+
+
+.partner img{
+    width: 143px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid #e9e9e9;
+}
+.partner .companybox li ul li{
+    margin: 10px 28px 10px 0;
+    text-align: center;
+    width: 143px;
+    float: left;
+}
+
+
+
+

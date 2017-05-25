@@ -1,0 +1,164 @@
+
+header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background: #000;
+    /*height: 50px;*/
+}
+header .topbar{
+    max-width: 1560px;
+    min-width: 960px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 14px;
+    overflow: hidden;
+    /*background: pink;*/
+}
+header .topbar a:hover{
+    color: #cf9 !important;
+}
+.topbar .logo{
+    display: block;
+    width: 242px;
+    height: 49px;
+    margin: 0 0 0 -51px;
+    background: url("../images/logo.png") no-repeat;
+}
+.topbar .nav li{
+    float: left;
+    padding: 0 10px;
+}
+.topbar .nav li:hover a{
+    background: #222;
+}
+.topbar .nav li:nth-child(5) a{
+    background: url("../images/shop/shop_bg.gif") no-repeat;
+}
+.topbar .nav li:nth-child(5):hover a{
+    background:  url("../images/shop/shop_bg.gif") no-repeat #222;
+}
+.topbar .nav li a{
+    position: relative;
+    display: block;
+    padding: 0 12px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #cccccc;
+}
+.topbar .nav li:nth-child(2) a{
+    padding-right: 20px;
+}
+
+.topbar .nav i{
+    position: absolute;
+    top: 22px;
+    right: 5px;
+    width: 7px;
+    height: 4px;
+    display: block;
+    margin: 0 0 0 25px;
+    /*padding-right: 5px;*/
+    background: url("../images/topbar_sprite2.png") no-repeat -223px -18px;
+}
+.topbar .nav li:nth-child(2):hover i{
+    transform: rotateX(180deg);
+}
+
+
+.topbar .login{
+    margin-right: -40px;
+}
+.topbar .login a{
+    color: #cccccc;
+    /*line-height: 50px;*/
+    margin: 15px 0 0 0;
+    padding: 0 20px;
+    border-right: 1px solid #666666;
+}
+
+
+.action a{
+    margin: 0 20px;
+}
+.action .vip{
+    width: 24px;
+    height: 14px;
+    display: block;
+    margin-top: 20px;
+    background: url("../images/topbar_icon.png") no-repeat -39px -40px;
+}
+.action .vip:hover{
+    background: url("../images/vip_hover.png") no-repeat 0 -2px;
+}
+
+.action .upload{
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-top: 16px;
+    background: url("../images/topbar_icon.png") no-repeat -7px -39px;
+}
+.action .upload:hover{
+    background: url("../images/upload_hover.png") no-repeat 0 0;
+}
+
+.action .app{
+    width: 21px;
+    height: 16px;
+    display: block;
+    margin-top: 16px;
+    background: url("../images/app.png") no-repeat;
+}
+.action .app:hover{
+    background: url("../images/app_hover.png") no-repeat;
+}
+.app i{
+    width: 7px;
+    height: 4px;
+    display: block;
+    margin: 5px 0 0 25px;
+    background: url("../images/topbar_sprite2.png") no-repeat -223px -18px
+}
+.app:hover i{
+    transform: rotateX(180deg);
+}
+
+
+
+.topbar .search{
+    position: relative;
+    color: #898989;
+    background: url("../images/topbar_sprite2.png") 0 0;
+    margin-top: 10px;
+    /*padding-top: 5px;*/
+}
+.topbar [type=text]{
+    width: 223px;
+    height: 29px;
+    box-sizing: border-box;
+    border: none;
+    color: #898989;
+    border-radius: 20px;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    background: transparent;
+}
+.topbar [type=submit]{
+    position: absolute;
+    right: 12px;
+    top: 5px;
+    border: none;
+    box-sizing: border-box;
+    width: 16px;
+    height: 17px;
+    background: url("../images/topbar_sprite2.png") no-repeat -223px -1px transparent;
+}
+
+input{
+    outline: none;
+}
+
+
